@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    {% if BMI < 16 %}
+        <p>
+            {% print (BMI) %}
+            {% print ("Severly downweight!") %}
+        </p>
+    {% endif %}
+
+    {% if 16 < BMI < 18.5 %}
+        <p>
+            {% print (BMI) %}
+            {% print ("Downweight!") %}
+        </p>
+    {% endif %}
+
+    {% if 18.5 < BMI < 25 %}
+        <p>
+            {% print (BMI) %}
+            {% print ("Normal!") %}
+        </p>
+    {% endif %}
+
+    {% if 25 < BMI < 30 %}
+        <p>
+            {% print (BMI) %}
+            {% print ("Overweight!") %}
+        </p>
+    {% endif %}
+
+    {% if BMI > 30 %}
+        <p>
+            {% print (BMI) %}
+            {% print ("Obsese!") %}
+        </p>
+    {% endif %}
+</body>
+</html>
